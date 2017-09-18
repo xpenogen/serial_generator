@@ -4,7 +4,7 @@ $(function () {
         $("#sn").val(generateSerial($("#model").val()));
     });
 
-    $.getJSON("synology_new.json", function(json) {
+    $.getJSON("synology.json", function(json) {
 
         $("#model").empty();
         $("#model").append($('<option>').text("Select model"));
